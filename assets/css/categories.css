@@ -1,0 +1,102 @@
+.cateSec{
+    padding: 70px 0 30px 0;
+    background-color: rgba(187, 196, 193, 0.05);
+    /* background: url(../../images/catebag2.jpg) center / cover no-repeat fixed; */
+}
+.cateSecCardsWrpr{
+    row-gap: 15px;
+}
+.cateSec_hdng_wrpr{
+    margin-bottom: 25px;
+    margin-bottom: 50px;
+}
+.heading{
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: var(--main-heading-color);
+}
+.para{
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: var(--main-heading-color);
+}
+.mainbtn{
+    background-color: var(--button1-background-color);
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 500;
+    border: 1px solid var(--button1-background-color);
+    line-height: 1;
+    padding: 10px 16px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+.mainbtn:hover{
+    background-color: transparent;
+    color: var(--button1-background-color);
+}
+.cateCard{
+    background-color: #fce3e2;
+    padding: 20px 20px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.07);
+    /* backdrop-filter: blur(1px); */
+}
+.cateCard:hover{
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.15);
+}
+.cateSec__hbox{
+    width: calc(100% - 180px);
+}
+.cateCardBox{
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: var(--icons-color1);
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.03);
+}
+.cateCard__heading{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--main-heading-color);
+    margin-bottom: 5px;
+}
+.cateCardBox__img{
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: contain;
+}
+@media(max-width:1199px){
+    .heading {
+        font-size: 2.4rem;
+        margin-bottom: 5px;
+    }
+    .para{
+        font-size: 1.4rem;
+    }
+    .cateSec_hdng_wrpr{
+        margin-bottom: 30px;
+    }
+    .cateSec {
+        padding: 65px 0 20px 0;
+    }
+}
+@media(max-width:539px){
+    .heading {
+        font-size: 2rem;
+    }
+    .para {
+        font-size: 1.4rem;
+    }
+    .faqboxhdr__h {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,570 @@
+<!doctype html>
+<html dir="ltr">
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Saloonat | Add Saloon </title>
+	<!-- Favicons -->
+	<link href="assets/images/logo.png" rel="icon">
+	<!-- font aweasome -->
+    <link rel="stylesheet" href="https://kit.fontawesome.com/d3eb7bac5e.css" crossorigin="anonymous">
+	<!-- tailwind -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<!-- bootstrap 5.2.2 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<!-- fonts -->
+	<link href="dist/fonts/popins/fonts.css" rel="stylesheet">
+	<link href="dist/fonts/tajawal/fonts.css" rel="stylesheet">
+	<!-- Main Stylesheet File -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link href="assets/css/ahsan.css" rel="stylesheet">
+	<link href="assets/css/categories.css" rel="stylesheet">
+	<link href="assets/css/products.css" rel="stylesheet">
+	<link href="assets/css/footer.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/rtl.css" rel="stylesheet">
+</head>
+<body>
+<div class="app">
+	<header class="header">
+		<div class="container">
+			<div class="navbr flex-i">
+				<a href="/" class="logo">
+					<img src="assets/images/logo.png" alt="" class="logo__img">
+					<h4 class="logo__heading">saloonat</h4>
+				</a>
+				<ul class="navlist flex-i">
+					<li class="navlist__item">
+						<a href="/" class="navlist__link">Home</a>
+					</li>
+					<li class="navlist__item">
+						<a href="categories.html" class="navlist__link">Categories</a>
+					</li>
+					<li class="navlist__item ">
+						<a href="add-saloon.html" class="navlist__link active">Add Saloon</a>
+					</li>
+					<li class="navlist__item">
+						<a href="#" class="navlist__link">Help & Support</a>
+					</li>
+				</ul>
+				<div class="headerSide2 flex-i">
+					<div class="dropdown">
+						<div class="headerLinkBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Incidunt quae quia
+							<i class="fa-regular fa-location-dot"></i>
+						</div>
+						<ul class="dropdown-menu addlocationdrp">
+						  	<li>
+								<div class="addlocationdrp__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#addressmodal">
+									<i class="fa-regular fa-location-dot"></i>
+									Add New Address
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="language_toggle">
+						<div class="language_toggle_ar flex-i">
+							<p class="language_toggle-p">Arabic</p>
+							<i class="fa-regular fa-earth-americas"></i>
+						</div>
+						<div class="language_toggle_en flex-i">
+							<p class="language_toggle-p">English</p>
+							<i class="fa-regular fa-earth-americas"></i>
+						</div>
+					</div>
+					<div class="showOnlogOut d-none">
+						<a href="#" class="loginbtn">Login</a>
+						<a href="register.html" class="registerBtn">Register</a>
+					</div>
+					<div class="showOnloging">
+						<div class="dropdown">
+							<div class="navbar_noti_box" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<div class="navbar_noti_box-ab">2</div>
+								<i class="fa-regular fa-bell"></i>
+							</div>
+							<div class="dropdown-menu navbar_noti_box_details">
+								<div class="navbar_noti_box_details_for_hover"></div>
+								<div class="navbar_noti_box_details_header">
+									Notification
+								</div>
+								<div class="navbar_noti_box_details_body">
+									<div class="navbar_noti_box_no-notification">
+										<img src="assets/images/no-notification.png" class="navbar_noti_box_no-notification_img">
+									</div>
+									<h6 class="navbar_noti_box_no-notification_text">No Notification</h6>
+								</div>
+							</div>
+						</div>
+						<div class="dropdown pfdrp">
+							<div class="profileDrpBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<img src="assets/images/sl1.jpg" alt="" class="profileDrpBtn__img">
+							</div>
+							<ul class="dropdown-menu prfdrplist">
+								<li class="prfdrplist__item">
+									<div  class="prfdrplist__link" type="button" data-bs-toggle="offcanvas" data-bs-target="#profilemodal">Your Profile</div>
+								</li>
+								<li class="prfdrplist__item">
+									<a href="bookings.html" class="prfdrplist__link">My Bookings</a>
+								</li>
+								<li class="prfdrplist__item">
+									<a href="favorites.html" class="prfdrplist__link">Favorites</a>
+								</li>
+								<li class="prfdrplist__item">
+									<a href="#" class="prfdrplist__link logout">Logout</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="mobileNavbtn">
+					<i class="fa-solid fa-bars-sort"></i>
+				</div>
+			</div>
+		</div>
+		<div class="mobileMenu">
+			
+			<div class="mobileMenu__header flex-i justify-between">
+				<a href="/" class="mobileMenu__logo">
+					<img src="assets/images/logo.png" alt="" class="mobileMenu__logo-img">
+				</a>
+				<div class="showOnlogOut d-none">
+					<a href="#" class="loginbtn">Login</a>
+					<a href="register.html" class="registerBtn">Register</a>
+				</div>
+				<div class="dropdown pfdrp">
+					<div class="profileDrpBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<img src="assets/images/sl1.jpg" alt="" class="profileDrpBtn__img">
+					</div>
+					<ul class="dropdown-menu prfdrplist">
+						<li class="prfdrplist__item">
+							<div  class="prfdrplist__link" type="button" data-bs-toggle="offcanvas" data-bs-target="#profilemodal">Your Profile</div>
+						</li>
+						<li class="prfdrplist__item">
+							<a href="bookings.html" class="prfdrplist__link">My Bookings</a>
+						</li>
+						<li class="prfdrplist__item">
+							<a href="favorites.html" class="prfdrplist__link">Favorites</a>
+						</li>
+						<li class="prfdrplist__item">
+							<a href="#" class="prfdrplist__link logout">Logout</a>
+						</li>
+					</ul>
+				</div>
+				<div class="mobileMenu__close">
+					<i class="fa-solid fa-xmark"></i>
+				</div>
+			</div>
+			<ul class="mobileMenuList flex-i">
+				<li class="navlist__item">
+					<a href="/" class="navlist__link">Home</a>
+				</li>
+				<li class="navlist__item">
+					<a href="categories.html" class="navlist__link">Categories</a>
+				</li>
+				<li class="navlist__item">
+					<a href="add-saloon.html" class="navlist__link active">Add Saloon</a>
+				</li>
+				<li class="navlist__item">
+					<a href="help.html" class="navlist__link">Help & Support</a>
+				</li>
+			</ul>
+		
+			<div class="mobileMenu__footer">
+				<ul class="hdrsmlist flex-i">
+					<li class="hdrsmlist__item">
+						<a href="#" class="hdrsmlist__link flex-a">
+							<i class="fa-brands fa-youtube"></i>
+						</a>
+					</li>
+					<li class="hdrsmlist__item">
+						<a href="#" class="hdrsmlist__link flex-a">
+							<i class="fa-brands fa-twitter"></i>
+						</a>
+					</li>
+					<li class="hdrsmlist__item">
+						<a href="#" class="hdrsmlist__link flex-a">
+							<i class="fa-brands fa-instagram"></i>
+						</a>
+					</li>
+					<li class="hdrsmlist__item">
+						<a href="#" class="hdrsmlist__link flex-a">
+							<i class="fa-brands fa-linkedin"></i>
+						</a>
+					</li>
+					<li class="hdrsmlist__item">
+						<a href="#" class="hdrsmlist__link flex-a">
+							<i class="fa-brands fa-facebook-f"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- header end -->
+    <div class="subbaner">
+        <h2 class="subbaner__h">Add Your Saloon</h2>
+        <p class="subbaner__p">Add Your Saloon Below...</p>
+    </div>
+    <!-- sub banner end -->
+    <div class="catepse">
+        <div class="container">
+			<form class="row">
+				<div class="col-md-6">
+					<div class="sblock">
+						<label class="input1__label">Name Of Saloon</label>
+						<input type="text" class="form-control input1" placeholder="My Home Address">
+					</div>
+					<div class="sblock">
+						<label class="input1__label">Details About Saloon</label>
+						<textarea type="text" class="form-control input1 input1--textarea"></textarea>
+					</div>
+					<div class="sblock">
+						<label class="input1__label">Description</label>
+						<input type="text" class="form-control input1" placeholder="My Home Address">
+					</div>
+					<div class="sblock row flex-i">
+						<div class="col-sm-6">
+							<label class="input1__label">Country</label>
+							<select type="text" class="form-select input1">
+								<option value="" selected disabled>Select your country</option>
+								<option value="">Pakistan</option>
+								<option value="">America</option>
+								<option value="">Egypt</option>
+								<option value="">India</option>
+								<option value="">France</option>
+							</select>
+						</div>
+						<div class="col-sm-6">
+							<label class="input1__label">Add Experience</label>
+							<select type="text" class="form-select input1">
+								<option value="" selected disabled>Years of Experience</option>
+								<option value="">1 Years</option>
+								<option value="">2 Years</option>
+								<option value="">3 Years</option>
+								<option value="">4 Years</option>
+								<option value="">5 Years</option>
+							</select>
+						</div>
+					</div>
+					<div class="sblock row flex-i">
+						<div class="col-sm-6">
+							<label class="input1__label">Status Of Saloon</label>
+							<select type="text" class="form-select input1">
+								<option value="" selected disabled>Add status Of Saloon</option>
+								<option value="">Open</option>
+								<option value="">Closed</option>
+								<option value="">Waiting</option>
+								<option value="">Booked</option>
+							</select>
+						</div>
+						<div class="col-sm-6">
+							<label class="input1__label">Staff members</label>
+							<select type="text" class="form-select input1">
+								<option value="" selected disabled>Add Staff members</option>
+								<option value=""> less than 5 persons</option>
+								<option value="">5-10 persons</option>
+								<option value="">10-15 persons</option>
+								<option value="">more than 15 persons</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="sblock">
+						<div class="input1__label">Add Main Image</div>
+						<input type="file" name="" id="img1" class="imgfld">
+						<label for="img1" class="flex-a flex-col imgfldlabel input1 ">
+							<i class="fa-solid fa-cloud-arrow-up filupicn"></i>
+							<p class="p1">Add Main Image</p>
+							<p class="p2">Recommend size 1215 * 385</p>
+						</label>
+					</div>
+					<label class="input1__label">Add Sub Images</label>
+					<div class="sblock row flex-i">
+						<div class="col-sm-4">
+							<input type="file" name="" id="img1" class="imgfld">
+							<label for="img1" class="flex-a flex-col imgfldlabel imgfldlabel2 input1 ">
+								<i class="fa-solid fa-cloud-arrow-up filupicn"></i>
+								<p class="p1">Sub Image</p>
+								<p class="p2">Recommend size 270 * 193</p>
+							</label>
+						</div>
+						<div class="col-sm-4">
+							<input type="file" name="" id="img1" class="imgfld">
+							<label for="img1" class="flex-a flex-col imgfldlabel imgfldlabel2 input1 ">
+								<i class="fa-solid fa-cloud-arrow-up filupicn"></i>
+								<p class="p1">Sub Image</p>
+								<p class="p2">Recommend size 270 * 193</p>
+							</label>
+						</div>
+						<div class="col-sm-4">
+							<input type="file" name="" id="img1" class="imgfld">
+							<label for="img1" class="flex-a flex-col imgfldlabel imgfldlabel2 input1 ">
+								<i class="fa-solid fa-cloud-arrow-up filupicn"></i>
+								<p class="p1">Sub Image</p>
+								<p class="p2">Recommend size 270 * 193</p>
+							</label>
+						</div>
+						<div class="col-sm-4">
+							<input type="file" name="" id="img1" class="imgfld">
+							<label for="img1" class="flex-a flex-col imgfldlabel imgfldlabel2 input1 ">
+								<i class="fa-solid fa-cloud-arrow-up filupicn"></i>
+								<p class="p1">Sub Image</p>
+								<p class="p2">Recommend size 270 * 193</p>
+							</label>
+						</div>
+						<div class="col-sm-4">
+							<input type="file" name="" id="img1" class="imgfld">
+							<label for="img1" class="flex-a flex-col imgfldlabel imgfldlabel2 input1 ">
+								<i class="fa-solid fa-cloud-arrow-up filupicn"></i>
+								<p class="p1">Sub Image</p>
+								<p class="p2">Recommend size 270 * 193</p>
+							</label>
+						</div>
+						<div class="col-sm-4">
+							<input type="file" name="" id="img1" class="imgfld">
+							<label for="img1" class="flex-a flex-col imgfldlabel imgfldlabel2 input1 ">
+								<i class="fa-solid fa-cloud-arrow-up filupicn"></i>
+								<p class="p1">Sub Image</p>
+								<p class="p2">Recommend size 270 * 193</p>
+							</label>
+						</div>
+					</div>
+					<button type="submit" class="inputF__btn inputF__btn2 flex-a">
+						Submit
+					</button>
+				</div>
+			</form>
+        </div>
+    </div>
+    <!--  -->
+    <footer class="footer">
+		<div class="footertop">
+			<div class="container">
+				<div class="footertopWrapper flex justify-between">
+					<div class="footerBox footerBox1">
+						<a href="/" class="footer__logo flex-a">
+							<img src="assets/images/logo.png" alt="" class="footer__logo-img">
+						</a>
+						<p class="footerBox__para">
+							At saloonat.com we offer all expertise, technology and know-how on a professional level as well as world-leading products, to find space and time indulge yourself in a secure, peaceful location.
+						</p>
+						<ul class="ftrsmlist flex-i">
+							<li class="ftrsmlist__item">
+								<a href="#" class="ftrsmlist__link flex-a">
+									<i class="fa-brands fa-facebook-f"></i>
+								</a>
+							</li>
+							<li class="ftrsmlist__item">
+								<a href="#" class="ftrsmlist__link flex-a">
+									<i class="fa-brands fa-instagram"></i>
+								</a>
+							</li>
+							<li class="ftrsmlist__item">
+								<a href="#" class="ftrsmlist__link flex-a">
+									<i class="fa-brands fa-twitter"></i>
+								</a>
+							</li>
+							<li class="ftrsmlist__item">
+								<a href="#" class="ftrsmlist__link flex-a">
+									<i class="fa-brands fa-linkedin"></i>
+								</a>
+							</li>
+							<li class="ftrsmlist__item">
+								<a href="#" class="ftrsmlist__link flex-a">
+									<i class="fa-brands fa-tiktok"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footerBox footerBox2">
+						<h2 class="footerBox__hdng">FEATURED CATEGORIES</h2>
+						<ul class="footerBox__list">
+							<li class="footerBox__list-item">
+								<a href="#" class="footerBox__list-link">Hair</a>
+							</li>
+							<li class="footerBox__list-item">
+								<a href="#" class="footerBox__list-link">Hands</a>
+							</li>
+							<li class="footerBox__list-item">
+								<a href="#" class="footerBox__list-link">​Facials</a>
+							</li>
+							<li class="footerBox__list-item">
+								<a href="#" class="footerBox__list-link">Feet</a>
+							</li>
+							<li class="footerBox__list-item">
+								<a href="#" class="footerBox__list-link">Makeup</a>
+							</li>
+							<li class="footerBox__list-item">
+								<a href="#" class="footerBox__list-link">Body Treatments</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footerBox footerBox3">
+						<h2 class="footerBox__hdng">HELP & SUPPORT</h2>
+						<ul class="footerBox__list">
+							<li class="footerBox__list-item">
+								<a href="#" class="footerBox__list-link">Add salon</a>
+							</li>
+							<li class="footerBox__list-item">
+								<a href="#" class="footerBox__list-link">Payment</a>
+							</li>
+							<li class="footerBox__list-item">
+								<a href="#" class="footerBox__list-link">Booking</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footerBox footerBox4">
+						<form action="" class="ftrbtnform">
+							<h2 class="ftrbtnform__hdng">Contact Us</h2>
+							<input type="text" placeholder="Name" class="form-control inputF">
+							<input type="text" placeholder="Email" class="form-control inputF">
+							<textarea type="text" placeholder="Message" class="form-control inputF inputF--textarea"></textarea>
+							<button type="submit" class="inputF__btn flex-a">
+								Submit
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footerBottom">
+			<div class="container">
+				<div class="footerBottomWrapper flex-i justify-between">
+					<p class="footerBottom_text">
+						Copyright © 2022,All rights reserved for saloonat.com
+					</p>
+					<ul class="footerBottomlist flex-i">
+						<li>
+							<a class="footerBottom_text" href="#">Privacy Policy</a>
+						</li>
+						<li>
+							<a class="footerBottom_text" href="#">Terms & Conditions</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+<!-- app -->
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="addressmodal" aria-labelledby="offcanvasRightLabel">
+	<form action="">
+		<div class="offcanvasHeader flex-i justify-between">
+			<h5 class="offcanvasHeader__hdng">Add new address</h5>
+			<div type="button" class="offcanvasClose flex-a" data-bs-dismiss="offcanvas">
+				<i class="fa-solid fa-xmark"></i>
+			</div>
+		</div>
+		<div class="offcanvasBody">
+			<label class="input1__label">Description</label>
+			<input type="text" class="form-control input1" placeholder="My Home Address" >
+			<label class="input1__label">Full Address</label>
+			<input type="text" class="form-control input1" placeholder="123 Street, City, Country" >
+			<label class="input1__label">Click on the map to change your location</label>
+			<iframe  class="offcanvImg" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14523.926166690082!2d54.357658!3d24.4860964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sae!4v1686250206124!5m2!1sen!2sae" style="border:0;" ></iframe>
+		</div>
+		<div class="offcanvasFooter flex-i justify-between">
+			<button type="button" class="offcanvasClose2 flex-a" data-bs-dismiss="offcanvas">
+				Close
+			</button>
+			<button type="submit" class="offcanvasClose3 flex-a">
+				Save
+			</button>
+		</div>
+	</form>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="profilemodal" aria-labelledby="offcanvasRightLabel">
+	<form action="">
+		<div class="offcanvasHeader flex-i justify-between">
+			<div class="offcanvasHeader__content">
+				<h5 class="offcanvasHeader__hdng">Profile</h5>
+				<p class="offcanvasHeader__p">This information will be displayed publicly so be careful what you share.</p>
+			</div>
+	
+			<div type="button" class="offcanvasClose flex-a" data-bs-dismiss="offcanvas">
+				<i class="fa-solid fa-xmark"></i>
+			</div>
+		</div>
+		<div class="offcanvasBody">
+			<div class="offcanbox flex">
+				<label for="" class="offcanbox__label">Profile Photo</label>
+				<div class="offcanbox-contnt flex-i">
+					<input id="file" type="file" class="offcanbox__input offcanbox__input-file">
+					<label for="file" class="inptfilinnerlbl flex-i">
+						<div class="inptimg">
+							<img src="assets/images/7553202-thumb-icon.jpg" alt="">
+						</div>
+						<div class="inptbtn">Change</div>
+					</label>
+					<button type="submit" class="inptbtn">Upload</button>
+				</div>
+			</div>
+			<div class="offcanbox flex-i">
+				<label for="" class="offcanbox__label">Full Name</label>
+				<div class="offcanbox-contnt flex-i">
+					<input type="text" class="form-control mb-0 input1">
+				</div>
+			</div>
+			<div class="offcanbox flex-i">
+				<label for="" class="offcanbox__label">Email</label>
+				<div class="offcanbox-contnt flex-i">
+					<input type="text" class="form-control mb-0 input1">
+				</div>
+			</div>
+			<div class="offcanbox flex-i">
+				<label for="" class="offcanbox__label">Phone No</label>
+				<div class="offcanbox-contnt flex-i">
+					<input type="text" class="form-control mb-0 input1">
+				</div>
+			</div>
+			<div class="offcanbox flex-i">
+				<label for="" class="offcanbox__label">Address</label>
+				<div class="offcanbox-contnt flex-i">
+					<input type="text" class="form-control mb-0 input1">
+				</div>
+			</div>
+			<div class="offcanbox flex">
+				<label for="" class="offcanbox__label">Short Biography</label>
+				<div class="offcanbox-contnt flex-i">
+					<textarea type="text" class="form-control mb-0 input1 input1--textarea"></textarea>
+				</div>
+			</div>
+			<div class="offcanbox">
+				<div class="flex-i mb-3">
+					<label for="" class="offcanbox__label">Old Password</label>
+					<div class="offcanbox-contnt flex-i">
+						<input type="password" class="form-control mb-0 input1">
+					</div>
+				</div>
+				<div class="flex-i mb-3">
+					<label for="" class="offcanbox__label">New Password</label>
+					<div class="offcanbox-contnt flex-i">
+						<input type="password" class="form-control mb-0 input1">
+					</div>
+				</div>
+				<div class="flex-i mb-3">
+					<label for="" class="offcanbox__label">Confirm New Password</label>
+					<div class="offcanbox-contnt flex-i">
+						<input type="password" class="form-control mb-0 input1">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="offcanvasFooter flex-i justify-between">
+			<button type="button" class="offcanvasClose2 flex-a" data-bs-dismiss="offcanvas">
+				Close
+			</button>
+			<button type="submit" class="offcanvasClose3 flex-a">
+				Save
+			</button>
+		</div>
+	</form>
+</div>
+<script src="dist/jquery-3.6.1/jquery-3.6.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>
